@@ -24,18 +24,8 @@ Button clear;
         logMessage("onCreate");
 
 
-        run.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                runCode();
-            }
-        });
-        clear.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                clearLog();
-            }
-        });
+        run.setOnClickListener(view -> runCode());
+        clear.setOnClickListener(view -> clearLog());
     }
 
     // Desarrolle los métodos “runCode” y “clearLog”

@@ -9,6 +9,12 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        jackOptions{
+            enabled true
+            android.compileOptions.sourceCompatibility JavaVersion.VERSION_1_8
+            android.compileOptions.targetCompatibility JavaVersion.VERSION_1_8
+        }
+
     }
     buildTypes {
         release {
